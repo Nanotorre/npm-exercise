@@ -169,7 +169,7 @@ header {
   top: -1px;
 }
   #section-1 img {
-    max-width: 50%;
+    width: 400px;
     display: block;
     height: auto;
     padding-bottom: 50px;
@@ -289,14 +289,9 @@ header {
     background-size: 995px;
     }
 }
-@media (max-width: 574px) {
-  body {
-    font-size: 14px;
-    }
-  h2, h3 {
-      font-weight: lighter;
-    }
-/*RESPONSIVE NAV*/
+
+@media (max-width: 849px) {
+      /*RESPONSIVE NAV*/
   nav {
     height: 45px;
     padding: 5px;
@@ -305,6 +300,53 @@ header {
     .top-links li {
       margin: 0 6px;
     }
+    /*RESPONSIVE SECTION 1*/
+  .collaboration-text {
+      line-height: 1.8em;
+      width: 80%;
+      padding: 20px 0 10px 40px;
+      }
+      #section-1 img {
+        max-width: 50%;
+        margin: 10px auto;
+        padding-top: 10px;
+        }
+
+      /*RESPONSIVE SECTION 2*/
+  #section-3 {
+    height: 1000px;
+    top: -1px;
+  }
+    #section-3 .s3head {
+      padding: 30px 20px;
+    }
+    #section-3 .boxes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    #section-3 .boxes .box {
+      margin: 20px 10px;
+    }
+}
+
+@media (max-width: 574px) {
+  body {
+    font-size: 14px;
+    }
+  h2, h3 {
+      font-weight: lighter;
+    }
+
+      /*RESPONSIVE HEADER*/
+  header {
+    height: 500px;
+    background-size: 600px;
+    background-position: 0 100px;
+    background-color: rgb(3, 88, 121);
+    }
     .npm-logo {
       max-width: 70px;
       height: auto;
@@ -312,14 +354,6 @@ header {
     }
     .search {
       padding: 0 10px;
- 
-    }
-/*RESPONSIVE HEADER*/
-  header {
-    height: 500px;
-    background-size: 600px;
-    background-position: 0 100px;
-    background-color: rgb(3, 88, 121);
     }
     .header-main {
       padding: 20px;
@@ -337,24 +371,13 @@ header {
     }
 
 
-/*RESPONSIVE SECTION 1 */
+    /*RESPONSIVE SECTION 1 */
   #section-1 { 
       flex-direction: column-reverse;
       justify-content: flex-end;
       align-items: center;
       height: 450px;
     }
-    #section-1 img {
-      max-width: 50%;
-      margin: 10px auto;
-      padding-top: 10px;
-
-      }
-    .collaboration-text {
-      line-height: 2em;
-      width: 100%;
-      padding: 20px 0 10px 40px;
-      }
     .collaboration-text ul {
       padding: 10px 0 10px 20px;
       }
@@ -380,25 +403,5 @@ header {
         align-items: flex-start;
         justify-content: center;
       }
-
-/*RESPONSIVE SECTION 2*/
-#section-3 {
-  height: 1000px;
-  top: -1px;
-}
-  #section-3 .s3head {
-    padding: 30px 20px;
-  }
-  #section-3 .boxes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  #section-3 .boxes .box {
-    margin: 20px 10px;
-  }
- 
   }
  
