@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet');
+* {
+  margin: 0;
+  padding: 0;
+ 
+}
+body {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  width: 100%;
+}
+h1 {
+  font-size: 3em;
+  font-weight: lighter;
+  }
+h2, h3 {
+  font-size: 2em;
+  font-weight: normal;
+}
+
+/*-----NAV BAR------*/
+nav {
+    font-family: Miriam Libre;
+    font-size: 0.8em; 
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    background-color: #C12127;
+    color: rgba(255,255,255,0.8);
+    height: 40px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+    }
+  nav .acronym {
+    padding-left: 20px;
+  }
+  .top-links {
+      display: flex;
+      flex-direction: row;
+      list-style:none;
+    } 
+  .top-links li {
+      margin: 0 12px;
+    }
+
+/*-----HEADER------*/
+header {
+  color: red;
+  height: 450px;
+  padding-top: 5px;
+  background: url("images/city-scape.svg");
+  background-color: rgb(32, 101, 136);
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-items: center;
+  margin: 0;
+  }
+  .header-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+  }
+  .npm-logo {
+    max-width: 110px;
+    height: auto;
+    padding: 8px 0 0 20px;
+  }
+  .search {
+    width:100%;
+    height: 40px;
+    padding: 0 20px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+  header input {
+    font-size: 1.1em;
+    font-weight: lighter;
+    background: rgb(31, 82, 111);
+    width: 100%;
+    border: 1px solid rgb(79, 113, 143);
+    padding-left: 10px;
+    color: white;
+  }
+  ::placeholder {
+    color:rgb(79, 113, 143);
+    opacity: 1;
+  }
+  header input:focus {
+    outline: none;
+    border: 1px solid rgb(79, 113, 143);
+  }
+  .magnifying-glass {
+    background: rgb(31, 82, 111);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.7em;
+    width:40px;
+    border: 1px solid rgb(79, 113, 143);
+  }
+  .header-bar ul {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    padding-right: 10px;
+  } 
+  .sign-in {
+    color: rgb(201, 227, 246);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400;
+  }
+  .bear-logo {
+    width:30px; 
+    padding: 5px;
+  }
+  .header-main {
+    color: white;
+    width: 930px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 20px;
+  }
+  .header-main a {
+    background-color: rgb(240, 146, 51);
+    color: white;
+    text-decoration: none;
+    width: 170px;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  .header-main p{
+    width: 500px;
+}
+
+/*-----SECTION 1 COLLABORATION------*/
+#section-1 { 
+  background-color: rgb(39, 53, 71);
+  height: 520px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  top: -1px;
+}
+  #section-1 img {
+    max-width: 50%;
+    display: block;
+    height: auto;
+    padding-bottom: 50px;
+  }
+  
+  .collaboration-text {
+    line-height: 2.3em;
+    width: 600px;
+    padding:70px 0 0 40px;
+  }
+  .collaboration-text ul {
+    font-size: 1.2em;
+    padding: 30px 0 35px 50px;
+  }
+  .collaboration-text a {
+    text-decoration: none;
+    color: white;
+  }
+  .sign-orgs {
+    background-color: rgb(203, 56, 55);
+    text-align: center;
+    font-size: 1.1em;
+    padding: 10px 25px;
+    border-radius: 30px;
+  } 
+
+
+/*-----SECTION 2 WHATIS------*/
+#section-2 {
+  height: 620px;
+  background: url("images/forklift.svg") 0 0 no-repeat;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+  top: -50px;
+}
+#section-2 div {
+  width: 350px;
+  color: white;
+  position: absolute;
+  top: 140px;
+  left: 120px;
+}
+#section-2 div p {
+  padding: 30px 0;
+}
+#section-2 div a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(49, 68, 88);
+  text-align: center;
+  font-size: 1.1em;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+
+/*-----SECTION 2 WHATCANYOUMAKE------*/
+#section-3 {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 500px;
+  z-index: 2;
+  position: relative;
+  top: -51px;
+}
+  #section-3 h2, #section-3 h3, #section-3 p{
+    color:rgb(83, 88, 98);
+  }
+  #section-3 h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  #section-3 .s3head {
+    text-align: center;
+    padding: 50px 0;
+  }
+  #section-3 .boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+  }
+  #section-3 .boxes .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+  }
+  #section-3 .boxes .box p {
+    color:rgb(135, 145, 156);
+  }
+  #section-3 .boxes .box h3 {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 0 15px;
+  }
+  #section-3 .boxes .box img {
+    width: 130px;
+  }
+  #section-3 .boxes .box a {
+    text-decoration: none;
+    color: rgb(208, 74, 73);
+  }
+
+
+
+/*------------------------------------*/
+/*RESPONSIVE RULES*/
+@media (max-width: 992px) {
+  header {
+    background-size: 995px;
+    }
+}
+@media (max-width: 574px) {
+  body {
+    font-size: 14px;
+    }
+  h2, h3 {
+      font-weight: lighter;
+    }
+/*RESPONSIVE NAV*/
+  nav {
+    height: 45px;
+    padding: 5px;
+    flex-direction: column;
+    }
+    .top-links li {
+      margin: 0 6px;
+    }
+    .npm-logo {
+      max-width: 70px;
+      height: auto;
+      padding: 8px 0 0 10px;
+    }
+    .search {
+      padding: 0 10px;
+ 
+    }
+/*RESPONSIVE HEADER*/
+  header {
+    height: 500px;
+    background-size: 600px;
+    background-position: 0 100px;
+    background-color: rgb(3, 88, 121);
+    }
+    .header-main {
+      padding: 20px;
+      justify-content: flex-start;
+      width: 100%;
+    }
+    .header-main p{
+      width: 300px;
+      padding: 10px 0;
+    }
+    .header-main a {
+      width: 120px;
+      padding: 8px;
+      border-radius: 30px;
+    }
+
+
+/*RESPONSIVE SECTION 1 */
+  #section-1 { 
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      height: 450px;
+    }
+    #section-1 img {
+      max-width: 50%;
+      margin: 10px auto;
+      padding-top: 10px;
+
+      }
+    .collaboration-text {
+      line-height: 2em;
+      width: 100%;
+      padding: 20px 0 10px 40px;
+      }
+    .collaboration-text ul {
+      padding: 10px 0 10px 20px;
+      }
+    .collaboration-text li {
+      font-size: 0.9em;
+        }
+    .sign-orgs {
+        padding: 8px;
+      } 
+
+/*RESPONSIVE SECTION 2*/
+  #section-2 {
+        height: 380px;
+        top: -2px;
+      }
+      #section-2 div {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 95px 10px 10px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+/*RESPONSIVE SECTION 2*/
+#section-3 {
+  height: 1000px;
+  top: -1px;
+}
+  #section-3 .s3head {
+    padding: 30px 20px;
+  }
+  #section-3 .boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #section-3 .boxes .box {
+    margin: 20px 10px;
+  }
+ 
+  }
+ 
